@@ -1,4 +1,4 @@
-**Jenkins-Generator** 是一款专为 DevOps 工程师设计的自动化脚本工具。它能够基于预设的 XML 模板，快速生成并部署适用于 **Java、Go、Node.js** 项目的 Jenkins CI/CD 流水线配置文件。
+**Jenkins-Generator** 是一款专为 解放运维工程师编写的skill。它能够基于预设的 XML 模板，快速生成并部署适用于 **Java、Go、Node.js** 项目的 Jenkins CI/CD 流水线配置文件。
 
 通过简单的交互式指令，即可完成从项目识别、参数收集、动态端口分配到 Jenkins API 任务创建的全流程自动化。
 
@@ -23,7 +23,7 @@
 ### 1. 准备工作
 * **Jenkins 服务端**：默认 `http://192.168.7.57:8080`。
 * **认证信息**：需配置 `JENKINS_USER` 与 `JENKINS_TOKEN`。
-* **模板路径**：确保 `.claude/skills/jenkins-automation/templates/` 目录下存在对应的 `.tpl` 文件。
+* **模板路径**：确保 `.claude/skills/jenkins-automation/templates/` 目录下存在对应的 `.tpl` 文件(由于每个公司CICD流程可能不一致，大家可以从自己公司的jenkins-master节点找对应的jobs目录下xml文件，把关键信息弄成变量当做模板放在skill对应模版下)。
 
 ### 2. 执行指令
 在支持此 Skill 的终端中输入：
